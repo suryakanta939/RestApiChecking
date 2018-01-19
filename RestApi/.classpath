@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="target/classes" path="src/main/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
+	<classpathentry kind="lib" path="D:/RestApiJar/RESTAPI jaars/AllInOne/activation-1.1.jar"/>
+	<classpathentry kind="lib" path="D:/RestApiJar/RESTAPI jaars/AllInOne/btf-1.2.jar"/>
+	<classpathentry kind="lib" path="D:/RestApiJar/RESTAPI jaars/AllInOne/commons-codec-1.9.jar"/>
+	<classpathentry kind="lib" path="D:/RestApiJar/RESTAPI jaars/AllInOne/commons-lang3-3.4.jar"/>
+	<classpathentry kind="lib" path="D:/RestApiJar/RESTAPI jaars/AllInOne/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="D:/RestApiJar/RESTAPI jaars/AllInOne/groovy-2.4.12.jar"/>
+	<classpathentry kind="lib" path="D:/RestApiJar/RESTAPI jaars/AllInOne/groovy-json-2.4.12.jar"/>
+	<classpathentry kind="lib" path="D:/RestApiJar/RESTAPI jaars/AllInOne/groovy-xml-2.4.12.jar"/>
+	<classpathentry kind="lib" path="D:/RestApiJar/RESTAPI jaars/AllInOne/guava-16.0.1.jar"/>
+	<classpathentry kind="lib" path="D:/RestApiJar/RESTAPI jaars/AllInOne/hamcrest-core-1.3.jar"/>
+	<classpathentry kind="lib" path="D:/RestApiJar/RESTAPI jaars/AllInOne/hamcrest-library-1.3.jar"/>
+	<classpathentry kind="lib" path="D:/RestApiJar/RESTAPI jaars/AllInOne/httpclient-4.5.3.jar"/>
+	<classpathentry kind="lib" path="D:/RestApiJar/RESTAPI jaars/AllInOne/httpcore-4.4.6.jar"/>
+	<classpathentry kind="lib" path="D:/RestApiJar/RESTAPI jaars/AllInOne/httpmime-4.5.1.jar"/>
+	<classpathentry kind="lib" path="D:/RestApiJar/RESTAPI jaars/AllInOne/jackson-annotations-2.7.0.jar"/>
+	<classpathentry kind="lib" path="D:/RestApiJar/RESTAPI jaars/AllInOne/jackson-core-2.7.3.jar"/>
+	<classpathentry kind="lib" path="D:/RestApiJar/RESTAPI jaars/AllInOne/jackson-coreutils-1.8.jar"/>
+	<classpathentry kind="lib" path="D:/RestApiJar/RESTAPI jaars/AllInOne/jackson-databind-2.7.3.jar"/>
+	<classpathentry kind="lib" path="D:/RestApiJar/RESTAPI jaars/AllInOne/jaxb-api-2.2.12.jar"/>
+	<classpathentry kind="lib" path="D:/RestApiJar/RESTAPI jaars/AllInOne/joda-time-2.3.jar"/>
+	<classpathentry kind="lib" path="D:/RestApiJar/RESTAPI jaars/AllInOne/jopt-simple-4.6.jar"/>
+	<classpathentry kind="lib" path="D:/RestApiJar/RESTAPI jaars/AllInOne/json-path-3.0.6-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/RestApiJar/RESTAPI jaars/AllInOne/json-path-3.0.6-sources.jar"/>
+	<classpathentry kind="lib" path="D:/RestApiJar/RESTAPI jaars/AllInOne/json-schema-core-1.2.5.jar"/>
+	<classpathentry kind="lib" path="D:/RestApiJar/RESTAPI jaars/AllInOne/json-schema-validator-2.2.6.jar"/>
+	<classpathentry kind="lib" path="D:/RestApiJar/RESTAPI jaars/AllInOne/json-schema-validator-3.0.6.jar"/>
+	<classpathentry kind="lib" path="D:/RestApiJar/RESTAPI jaars/AllInOne/json-schema-validator-3.0.6-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/RestApiJar/RESTAPI jaars/AllInOne/json-schema-validator-3.0.6-sources.jar"/>
+	<classpathentry kind="lib" path="D:/RestApiJar/RESTAPI jaars/AllInOne/jsr305-3.0.0.jar"/>
+	<classpathentry kind="lib" path="D:/RestApiJar/RESTAPI jaars/AllInOne/libphonenumber-6.2.jar"/>
+	<classpathentry kind="lib" path="D:/RestApiJar/RESTAPI jaars/AllInOne/mailapi-1.4.3.jar"/>
+	<classpathentry kind="lib" path="D:/RestApiJar/RESTAPI jaars/AllInOne/msg-simple-1.1.jar"/>
+	<classpathentry kind="lib" path="D:/RestApiJar/RESTAPI jaars/AllInOne/rest-assured-3.0.6.jar"/>
+	<classpathentry kind="lib" path="D:/RestApiJar/RESTAPI jaars/AllInOne/rest-assured-3.0.6-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/RestApiJar/RESTAPI jaars/AllInOne/rest-assured-3.0.6-sources.jar"/>
+	<classpathentry kind="lib" path="D:/RestApiJar/RESTAPI jaars/AllInOne/rest-assured-common-3.0.6-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/RestApiJar/RESTAPI jaars/AllInOne/rest-assured-common-3.0.6-sources.jar"/>
+	<classpathentry kind="lib" path="D:/RestApiJar/RESTAPI jaars/AllInOne/rhino-1.7R4.jar"/>
+	<classpathentry kind="lib" path="D:/RestApiJar/RESTAPI jaars/AllInOne/scala-library-2.11.12.jar"/>
+	<classpathentry kind="lib" path="D:/RestApiJar/RESTAPI jaars/AllInOne/scala-support-3.0.6.jar"/>
+	<classpathentry kind="lib" path="D:/RestApiJar/RESTAPI jaars/AllInOne/tagsoup-1.2.1.jar"/>
+	<classpathentry kind="lib" path="D:/RestApiJar/RESTAPI jaars/AllInOne/uri-template-0.9.jar"/>
+	<classpathentry kind="lib" path="D:/RestApiJar/RESTAPI jaars/AllInOne/xml-path-3.0.6.jar"/>
+	<classpathentry kind="lib" path="D:/RestApiJar/RESTAPI jaars/AllInOne/xml-path-3.0.6-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/RestApiJar/RESTAPI jaars/AllInOne/xml-path-3.0.6-sources.jar"/>
+	<classpathentry kind="lib" path="D:/RestApiJar/RESTAPI jaars/AllInOne/scribejava-apis-2.5.3.jar"/>
+	<classpathentry kind="lib" path="D:/RestApiJar/RESTAPI jaars/AllInOne/scribejava-core-2.5.3.jar"/>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>
