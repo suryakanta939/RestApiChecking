@@ -1,18 +1,22 @@
-package checking.RestApi;
+package logRequestAndResponse;
+
+import static io.restassured.RestAssured.given;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import static io.restassured.RestAssured.given;
+
 import io.restassured.RestAssured;
+import io.restassured.response.Response;
 
-public class TwitterApiPost {
-
+public class LogRequest {
 	/**
 	 * Given i have this information
 	 * When i perform this operation
 	 * Then this should be the out put
 	 * 
 	 * */	
+	
+	
 	String consumerkey="sWN0VxkPyhLhM4QAqrQFwBvNG";
 	String consumersecret="f6FXkm48kMtiPCMzI3CFszfPIOp1nG61RdcEjLz9udlMFYLrC8";
 	String token="2890493136-9bH8pqH4GFfoouzsSjvGPVLopYtu7QArKCRdRRA";
@@ -25,15 +29,29 @@ public class TwitterApiPost {
 	}
 
 	@Test
-	public void f() {
+	public void testMethod() {
+		/**
+		 * if we need to log  the request then just need 
+		 * to use the log after the given()
+		 * then methods as per the need 
+		 * like all()/body()/header()/parameters() etc
+		 * 
+		 * if we need to log if the validation fails
+		 * then use ifValidationFails()
+		 * */
 	given()
+	.log()
+//	.all()
+//	.body()
+//	.headers()
+//	.parameters()
+	.ifValidationFails()
 		.auth()
 		.oauth(consumerkey, consumersecret, token, tokenSecret)
-		.queryParam("status", "tweeting #testing1 #testing2")
+		.queryParam("status", "my second tweet1")
 	.when()
 		.post("/update.json")
 	.then()
-	.log().body()
 		.statusCode(200);
 
 	}
