@@ -34,7 +34,7 @@ public class TwitterE2EFlow {
 	given()
 		.auth()
 		.oauth(consumerkey, consumersecret, token, tokenSecret)
-		.queryParam("status", "checking my new tweet123")
+		.queryParam("status", "my tweet on sunday")
 	.when()
 		.post("/update.json")
 	.then()
@@ -75,7 +75,7 @@ public class TwitterE2EFlow {
 					System.out.println("the tweetScreen is "+screnName);
 					System.out.println("the tweet is "+tweetText);
 	}
-	@Test(dependsOnMethods="readTweet")
+	@Test(dependsOnMethods="readTweet",enabled=false)
 	public void deleteTweet(){
 		Response res=
 				given()
@@ -89,7 +89,7 @@ public class TwitterE2EFlow {
 				.when()
 				/*here we can use the delete in three different way*/
 					.post("/destroy/"+tweetId+".json")
-				//	.post("/destroy/954327804794949633.json")
+				//	.post("/destroy/954942604315000832.json")
 					//post("/destroy.json")
 				.then()
 					.statusCode(200)
@@ -100,5 +100,36 @@ public class TwitterE2EFlow {
 					System.out.println("the tweetScreen is "+screnName);
 					System.out.println("the tweet is "+tweetText);
 	}
+	
+	/**
+	 * this is the perfect way when there will be no query param
+	 * in url endpoint
+	 * 
+	 * Ex :https://api.twitter.com/1.1/statuses/destroy/240854986559455234.json
+	 * */
+	
+	@Test(dependsOnMethods="readTweet")
+	public void deleteTweetAnotherWay(){
+		Response res=
+				given()
+					.auth()
+					.oauth(consumerkey, consumersecret, token, tokenSecret)
+					/**
+					 * if we are using the below line then we can use the 3rd option directly
+					 * else the other two we can use
+					 * */
+					.pathParam("id",tweetId)
+				.when()
+				   .post("/destroy/{id}.json")
+				.then()
+					.statusCode(200)
+					.extract().response();
+					
+					String screnName=res.path("user.screen_name");
+					String tweetText=res.path("text");
+					System.out.println("the tweetScreen is "+screnName);
+					System.out.println("the tweet is "+tweetText);
+	}
+	
 	
 }

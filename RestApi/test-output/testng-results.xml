@@ -1,154 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="2" failed="1" ignored="0" total="3" passed="0">
+<testng-results skipped="0" failed="0" ignored="1" total="4" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1998" started-at="2018-01-19T12:27:14Z" finished-at="2018-01-19T12:27:16Z">
+  <suite name="Default suite" duration-ms="6520" started-at="2018-01-21T05:08:54Z" finished-at="2018-01-21T05:09:01Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1998" started-at="2018-01-19T12:27:14Z" finished-at="2018-01-19T12:27:16Z">
-      <class name="checking.RestApi.TwitterGetTweet">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:checking.RestApi.TwitterGetTweet@3532ec19]" name="setUp" is-config="true" duration-ms="312" started-at="2018-01-19T17:57:14Z" finished-at="2018-01-19T17:57:15Z">
+    <test name="Default test" duration-ms="6520" started-at="2018-01-21T05:08:54Z" finished-at="2018-01-21T05:09:01Z">
+      <class name="checking.RestApi.TwitterE2EFlow">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:checking.RestApi.TwitterE2EFlow@ae45eb6]" name="setUp" is-config="true" duration-ms="488" started-at="2018-01-21T10:38:54Z" finished-at="2018-01-21T10:38:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="postTweet()[pri:0, instance:checking.RestApi.TwitterGetTweet@3532ec19]" name="postTweet" duration-ms="1665" started-at="2018-01-19T17:57:15Z" finished-at="2018-01-19T17:57:16Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[1 expectation failed.
-Expected status code <200> but was <403>.
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: 1 expectation failed.
-Expected status code <200> but was <403>.
-
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)
-	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)
-	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:60)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:235)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:471)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
-	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:643)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:122)
-	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:130)
-	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)
-	at checking.RestApi.TwitterGetTweet.postTweet(TwitterGetTweet.java:41)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method status="PASS" signature="postTweet()[pri:0, instance:checking.RestApi.TwitterE2EFlow@ae45eb6]" name="postTweet" duration-ms="3498" started-at="2018-01-21T10:38:55Z" finished-at="2018-01-21T10:38:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postTweet -->
-        <test-method status="SKIP" signature="readTweet()[pri:0, instance:checking.RestApi.TwitterGetTweet@3532ec19]" name="readTweet" duration-ms="0" started-at="2018-01-19T17:57:16Z" depends-on-methods="checking.RestApi.TwitterGetTweet.postTweet" finished-at="2018-01-19T17:57:16Z">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method TwitterGetTweet.readTweet()[pri:0, instance:checking.RestApi.TwitterGetTweet@3532ec19] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method TwitterGetTweet.readTweet()[pri:0, instance:checking.RestApi.TwitterGetTweet@3532ec19] depends on not successfully finished methods
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1084)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        <test-method status="PASS" signature="readTweet()[pri:0, instance:checking.RestApi.TwitterE2EFlow@ae45eb6]" name="readTweet" duration-ms="792" started-at="2018-01-21T10:38:58Z" depends-on-methods="checking.RestApi.TwitterE2EFlow.postTweet" finished-at="2018-01-21T10:38:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- readTweet -->
-        <test-method status="SKIP" signature="deleteTweet()[pri:0, instance:checking.RestApi.TwitterGetTweet@3532ec19]" name="deleteTweet" duration-ms="0" started-at="2018-01-19T17:57:16Z" depends-on-methods="checking.RestApi.TwitterGetTweet.readTweet" finished-at="2018-01-19T17:57:16Z">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method TwitterGetTweet.deleteTweet()[pri:0, instance:checking.RestApi.TwitterGetTweet@3532ec19] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method TwitterGetTweet.deleteTweet()[pri:0, instance:checking.RestApi.TwitterGetTweet@3532ec19] depends on not successfully finished methods
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1084)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        <test-method status="PASS" signature="deleteTweetAnotherWay()[pri:0, instance:checking.RestApi.TwitterE2EFlow@ae45eb6]" name="deleteTweetAnotherWay" duration-ms="1700" started-at="2018-01-21T10:38:59Z" depends-on-methods="checking.RestApi.TwitterE2EFlow.readTweet" finished-at="2018-01-21T10:39:01Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- deleteTweet -->
-      </class> <!-- checking.RestApi.TwitterGetTweet -->
+        </test-method> <!-- deleteTweetAnotherWay -->
+      </class> <!-- checking.RestApi.TwitterE2EFlow -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

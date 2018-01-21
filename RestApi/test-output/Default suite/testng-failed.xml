@@ -3,14 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="checking.RestApi.TwitterGetTweet">
+      <class name="checking.RestApi.TwitterApiPost">
         <methods>
-          <include name="postTweet"/>
-          <include name="deleteTweet"/>
-          <include name="readTweet"/>
+          <include name="f"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- checking.RestApi.TwitterGetTweet -->
+      </class> <!-- checking.RestApi.TwitterApiPost -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
