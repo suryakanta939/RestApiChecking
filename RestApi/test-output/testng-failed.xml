@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="AssertExample.TwitterAssertExample">
+      <class name="UsefullTricks.TwitterCheckResponseTime">
         <methods>
-          <include name="testMethod"/>
-          <include name="setUp"/>
+          <include name="anotherwayToChck"/>
+          <include name="seetingUp"/>
         </methods>
-      </class> <!-- AssertExample.TwitterAssertExample -->
+      </class> <!-- UsefullTricks.TwitterCheckResponseTime -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

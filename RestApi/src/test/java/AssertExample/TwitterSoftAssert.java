@@ -1,16 +1,15 @@
 package AssertExample;
 
+import static io.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.equalTo;
+import static org.hamcrest.Matchers.hasItem;
+
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import static io.restassured.RestAssured.given;
-
-import static org.hamcrest.Matchers.*;
-
 import io.restassured.RestAssured;
-import io.restassured.response.Response;
 
-public class TwitterAssertExample {
+public class TwitterSoftAssert {
 	String consumerKey="sWN0VxkPyhLhM4QAqrQFwBvNG";
 	String consumerSecret="f6FXkm48kMtiPCMzI3CFszfPIOp1nG61RdcEjLz9udlMFYLrC8";
 	String token="2890493136-9bH8pqH4GFfoouzsSjvGPVLopYtu7QArKCRdRRA";
@@ -39,9 +38,12 @@ public class TwitterAssertExample {
 	  .log()
 	  .all()
 	  .statusCode(200)
-	  .body("user.name",hasItem("suryakanta sahoo"))
-	  .body("entities.hashtags[0].text",hasItem("testing2"))
-	  .body("entities.hashtags[0].size()",equalTo(2));
+	  .body("user.name",hasItem("suryakanta sahoo"),
+			  "entities.hashtags[0].text",hasItem("testing2"),
+			  "entities.hashtags[0].size()",equalTo(2));
+	  
+//	  .body("entities.hashtags[0].text",hasItem("testing2"))
+//	  .body("entities.hashtags[0].size()",equalTo(2));
 	   
   }
 }

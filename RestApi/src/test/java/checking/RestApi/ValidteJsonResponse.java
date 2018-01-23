@@ -1,7 +1,7 @@
 package checking.RestApi;
 
 import static io.restassured.RestAssured.given;
-import static org.hamcrest.Matchers.equalTo;
+import static org.hamcrest.Matchers.*;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
