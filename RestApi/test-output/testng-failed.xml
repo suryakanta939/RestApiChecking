@@ -3,12 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="UsefullTricks.TwitterCheckResponseTime">
+      <class name="checking.RestApi.ToolsQa">
         <methods>
-          <include name="anotherwayToChck"/>
-          <include name="seetingUp"/>
+          <include name="postUser"/>
         </methods>
-      </class> <!-- UsefullTricks.TwitterCheckResponseTime -->
+      </class> <!-- checking.RestApi.ToolsQa -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
