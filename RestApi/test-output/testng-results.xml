@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="2" total="3" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="3346" started-at="2018-01-29T14:03:06Z" finished-at="2018-01-29T14:03:09Z">
+  <suite name="Default suite" duration-ms="2001" started-at="2018-08-08T09:54:55Z" finished-at="2018-08-08T09:54:57Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="3346" started-at="2018-01-29T14:03:06Z" finished-at="2018-01-29T14:03:09Z">
-      <class name="checking.RestApi.ToolsQa">
-        <test-method status="PASS" signature="postUser()[pri:0, instance:checking.RestApi.ToolsQa@4501b7af]" name="postUser" duration-ms="3329" started-at="2018-01-29T19:33:06Z" finished-at="2018-01-29T19:33:09Z">
+    <test name="Default test" duration-ms="2001" started-at="2018-08-08T09:54:55Z" finished-at="2018-08-08T09:54:57Z">
+      <class name="checking.RestApi.TestEmployee">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:checking.RestApi.TestEmployee@59f99ea]" name="setUp" is-config="true" duration-ms="298" started-at="2018-08-08T15:24:55Z" finished-at="2018-08-08T15:24:55Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- postUser -->
-      </class> <!-- checking.RestApi.ToolsQa -->
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="employeeDetails()[pri:0, instance:checking.RestApi.TestEmployee@59f99ea]" name="employeeDetails" duration-ms="1689" started-at="2018-08-08T15:24:55Z" finished-at="2018-08-08T15:24:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- employeeDetails -->
+      </class> <!-- checking.RestApi.TestEmployee -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

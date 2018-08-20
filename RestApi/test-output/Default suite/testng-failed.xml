@@ -3,11 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="checking.RestApi.ToolsQa">
+      <class name="checking.RestApi.TestEmployee">
         <methods>
-          <include name="postUser"/>
+          <include name="setUp"/>
+          <include name="createEmployee"/>
         </methods>
-      </class> <!-- checking.RestApi.ToolsQa -->
+      </class> <!-- checking.RestApi.TestEmployee -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
